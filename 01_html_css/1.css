@@ -1,0 +1,40 @@
+div {
+    border: 1px solid red;
+    color:blue;
+    font-size: 30px;
+}
+span {
+    border: 1px dashed blue;
+    font-size: 20px;
+    color: yellow;
+}
+
+#id001 {
+    color: purple;
+    font-size: 30px;
+    border: 1px solid green;
+}
+
+#id002 {
+    color:red;
+    font-size: 20px;
+    border:5px dotted wheat;
+}
+
+.class1 {
+    color:orange;
+    font-size: 30px;
+    border: 1px yellow solid;
+}
+
+.class2{
+    color: hotpink;
+    font-size: 26px;
+    border: 1px red dashed;
+}
+
+.class01,#id01 {
+    color: blue;
+    font-size: 20px;
+    border: 1px royalblue solid;
+}

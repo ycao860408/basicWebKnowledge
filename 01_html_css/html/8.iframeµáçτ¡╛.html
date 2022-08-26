@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>8.iframe标签.html</title>
+    </head>
+    <body>
+    我是一个完整的页面 <br><br><br>
+    <!--
+        iframe标签可以在html页面上,开辟一个小窗口,去显示一个独立的页面
+            src属性规定要显示的页面的路径
+            width="500"     规定宽度
+            height="300"    规定高度
+        iframe标签和a标签组合使用的步骤:
+            1 在iframe标签中使用name属性定义一个名称
+            2 在a标签的target属性上.指定iframe的name属性值
+    -->
+    <iframe src="./1.font标签.html" name="abc" width="500" height="300"></iframe>
+
+    <br>
+    <br>
+    <ul>
+        <li><a href="2.特殊字符.html" target="abc">2.特殊字符.html</a> </li>
+        <li><a href="3.标题标签.html" target="abc">3.标题标签.html</a> </li>
+        <li><a href="4.超链接.html" target="abc">4.超链接.html</a> </li>
+    </ul>
+    </body>
+</html>

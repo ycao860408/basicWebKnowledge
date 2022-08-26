@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="script/jquery-1.7.2.js"></script>
+    <script type="text/javascript">
+
+        $(function () {
+            // // 获取起始标签和结束标签中的内容
+            // var html = $("div").html();
+            // alert(html);
+            // // 设置起始标签和结束标签中的内容
+            // $("div").html("<h1>我得意的笑</h1>");
+
+            // 获取起始标签和结束标签中的内容
+            // var text = $("div").text();
+            // alert(text);
+            // 设置起始标签和结束标签中的内容
+            // $("div").text("<h1>我得意的笑</h1>");
+
+
+
+            $("button").click(function () {
+                // 获取表单项value的属性值
+                // var value = $(":text").val();
+                // alert(value);
+                //
+                // $(":text").val("一口咬下去,满嘴都是油");
+
+                var val = $(":checkbox").val();
+                alert(val);
+
+
+            });
+        });
+
+    </script>
+</head>
+<body>
+    用户名: <input type="text" name="username" id="username"> <br>
+
+    <input type="checkbox" name="abc" id="abc" value="java">java
+
+    <button>按钮</button>
+    <div> <span>div中的span</span> </div>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test6</title>
+    <script src="script/jquery-1.7.2.js"></script>
+    <script type="text/javascript">
+      $(function(){
+        $("<h1>this is a good boy</h1>").insertAfter($("div"));
+        $("div").replaceWith($("<h1>this is a good boy</h1>"))
+        //$("h1").remove();
+        $("h1").empty();
+      });
+    </script>
+</head>
+<body>
+  <div>
+    1
+    <span>12</span>
+  </div>
+</body>
+</html>

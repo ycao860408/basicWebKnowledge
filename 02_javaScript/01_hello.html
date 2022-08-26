@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Amazon</title>
+
+    <script type="text/javascript" src="1.js"></script>
+    <script>
+        /*data type*/
+        alert("hello javascript!")
+        var i;
+        alert(i);
+        i = 12;
+        alert(typeof(i));
+
+        i = "abc";
+        alert(typeof(i));
+
+        var a = 1;
+        var b = "abc";
+        alert(a * b);
+        /*== and ===*/
+        a = 12;
+        b = "12";
+        alert(a == b);
+        alert(a === b);
+        /*logic expression*/
+        if (a) {
+            alert("normal var is true");
+        } else {
+            alert("normal var is false")
+        }
+
+        a = 0;
+
+        if (a) {
+            alert("0 is true")
+        } else {
+            alert("0 is false")
+        }
+
+        a = null;
+        if (a) {
+            alert("null is true")
+        } else {
+            alert("null is false")
+        }
+
+        a = undefined;
+        if (a) {
+            alert("undefined is true")
+        } else {
+            alert("undefined is false")
+        }
+
+        a = "";
+        if (a) {
+            alert("empty string is true")
+        } else {
+            alert("empty string is false")
+        }
+
+        a = "abc";
+        b = true;
+        var d = false;
+        var c = null;
+        console.log(b && a);
+        console.log(c && d);
+        console.log(a || c);
+        console.log(d || c);
+        /*array*/
+        var arr = [];
+        alert(arr.length);
+        arr[0] = 12;
+        alert(arr[0]);
+        arr[2] = "abc";
+        alert(arr[2]);
+        alert(arr.length)
+        for (var i = 0; i < arr.length; i++) {
+            alert(arr[i]);
+        }
+        /*function*/
+        function fun() {
+            alert("This is a function!");
+        }
+        fun();
+
+        function fun1(a, b) {
+            alert("fun1's two parameter are " + a + " and " + b + ".");
+        }
+
+        fun1(2, "abc");
+
+        function fun3(val1, val2) {
+            return val1 + val2;
+        }
+
+        var total = fun3(1,2);
+        alert(total);
+
+        var fName = function(num1, num2) {
+            return num1 * num2;
+        }
+        alert(fName(11, 2));
+
+        function temp() {
+            alert("without parameter");
+        }
+
+        function temp(a, b) {
+            alert("with parameter "+ a + " " + b);
+        }
+        temp();
+    </script>
+    <link type="text/css" rel="stylesheet" href=""/>
+    <style type="text/css">
+
+    </style>
+</head>
+<body>
+
+</body>
+</html>

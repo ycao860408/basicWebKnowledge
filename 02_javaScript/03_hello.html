@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document Method</title>
+    <script type="text/javascript">
+      function onclickFun() {
+        var unObj = document.getElementById("username");
+        var content = unObj.value;
+        var userNamePatt = /^\w{5,12}$/;
+        var unSpan = document.getElementById("usernameSpan");
+        //alert(unSpan);
+        if (userNamePatt.test(content)) {
+            unSpan.innerHTML = "";
+        } else {
+            unSpan.innerHTML = "illegal username!"
+        }
+      }
+    </script>
+</head>
+<body>
+username: <input type="text" name="username" value="zhangsan" id="username"/> &nbsp;
+<span style="color: red" id="usernameSpan"></span>
+<br/>
+<button onclick="onclickFun();">Verification</button>
+</body>
+</html>

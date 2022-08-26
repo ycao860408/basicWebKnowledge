@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>5.img标签.html</title>
+</head>
+<body>
+<!--需求1：使用img标签显示一张美女的照片。并修改宽高，和边框属性
+        img标签是图像标签
+            src 属性规定要显示的图片的路径
+            width 属性规定图片的宽度
+            height 属性规定图片的高度
+            alt 属性规定当指定路径找不到图片时,用于替代显示的文本内容
+            border属性规定边框大小
+
+        在JavaSE中的路径
+            相对路径    从工程开始算
+            绝对路径    盘符:/文件名
+
+        html(JavaWeb)中的路径
+            相对路径
+                .               当前目录
+                ..              上一级目录
+                文件名           当前目录/文件名.  也就是相当于./文件名   ./可以省略
+
+            绝对路径
+                错误的写法:      盘符:/文件名
+                正确的写法:      http://ip(域名):port/工程路径/资源路径(演示需要服务器)
+-->
+    <img src="../1.jpg" width="100" height="120" alt="美女呢" border="1">
+    <img src="2.jpg" width="100" height="120" alt="美女呢">
+    <img src="../imgs/3.jpg" width="100" height="120" alt="美女呢">
+    <img src="../imgs/4.jpg" width="100" height="120" alt="美女呢">
+    <img src="../imgs/5.jpg" width="100" height="120" alt="美女呢">
+    <img src="../imgs/6.jpg" width="100" height="120" alt="美女呢">
+</body>
+</html>

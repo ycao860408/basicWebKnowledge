@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>selectAll</title>
+    <script type="text/javascript">
+      var checkAll = function() {
+        var inputs = document.getElementsByTagName("input");
+        for (var i = 0; i < inputs.length; i++) {
+          inputs[i].checked = true;
+        }
+      }
+    </script>
+</head>
+<body>
+hobby:
+<input type="checkbox" name="hobby" value="cpp"/>C++
+<input type="checkbox" name="hobby" value="java"/>Java
+<input type="checkbox" name="hobby" value="js"/> JavaScript
+<input type="checkbox" name="hobby" value="lua"/> Lua
+<br/><br/>
+<button onclick="checkAll();">select all</button> &nbsp;
+</body>
+</html>

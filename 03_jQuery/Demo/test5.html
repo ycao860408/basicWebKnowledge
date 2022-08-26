@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="script/jquery-1.7.2.js"></script>
+    <script type="text/javascript">
+
+        $(function () {
+            // 设置和获取属性值
+            // 传一个参数是获取( 属性名 )
+            // var attr = $(":checkbox:first").attr("name");
+            // alert(attr);
+            // 传两个参数是,设置( 属性名 , 值 )
+            // $(":checkbox:first").attr("name","bbj");
+
+            // var attr = $(":checkbox:first").prop("checked");
+            // alert(attr);
+
+            // $(":checkbox:first").attr("abc","abcValue");
+            // alert( $(":checkbox:first").attr("abc") );
+
+            $(":checkbox:first").prop("checked",true);
+            $(":checkbox:last").prop("checked",false);
+        });
+
+    </script>
+</head>
+<body>
+    多选：
+    <input  name="checkbox1" type="checkbox" value="java" />java
+    <input name="checkbox2" type="checkbox" value="cpp" />C++
+    <input name="checkbox3" type="checkbox" value="js" checked="checked"/>javaScript
+    <br/>
+</body>
+</html>

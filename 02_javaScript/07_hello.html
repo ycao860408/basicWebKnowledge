@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>details</title>
+  <script type="text/javascript">
+    window.onload = function() {
+      var htmlDivElement = document.createElement("div");
+      //htmlDivElement.innerHTML="This is a good boy!"
+      var text = document.createTextNode("This is a good boy!");
+      htmlDivElement.appendChild(text);
+      htmlDivElement.onclick = function() {
+        alert("dynamical registration");
+      }
+      document.body.appendChild(htmlDivElement);
+    }
+  </script>
+</head>
+<body>
+
+</body>
+</html>

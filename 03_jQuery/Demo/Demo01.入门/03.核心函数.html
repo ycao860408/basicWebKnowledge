@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../script/jquery-1.7.2.js"></script>
+<script type="text/javascript">
+
+	//核心函数的4个作用
+    //传入参数为[函数]时：在文档加载完成后执行这个函数
+    $(function() {
+        //("<div><span>1</span><span>2</span></div>").appendTo("body")
+        var domVar = document.getElementById("div1");
+        alert(domVar);
+        var jQVar = $(domVar);
+        alert(jQVar);
+    });
+
+        //传入参数为[HTML字符串]时：根据这个字符串创建元素节点对象
+        // $("<div>1</div>").appendTo("body");
+        //传入参数为[选择器字符串]时：根据这个字符串查找元素节点对象
+        //传入参数为[DOM对象]时：将DOM对象包装为jQuery对象返回
+
+   /* window.onload = function() {
+        var div = document.createElement("div");
+        var span1 = document.createElement("span");
+        var text1 = document.createTextNode("1");
+        span1.appendChild(text1);
+        var span2 = document.createElement("span");
+        var text2 = document.createTextNode("2");
+        span2.appendChild(text2);
+        div.appendChild(span1);
+        div.appendChild(span2);
+        document.body.appendChild(div);
+    }*/
+</script>
+</head>
+<body>
+<div id="div1">this is a good boy!</div>
+</body>
+</html>
